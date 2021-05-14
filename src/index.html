@@ -186,15 +186,16 @@
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <form action="#">
+              <form action="resources/index.php">
                 <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control shadow-none" id="Email" placeholder="name@example.com">
+                <input type="email" class="form-control shadow-none" id="Email" placeholder="name@example.com"
+                  name="email">
                 <label for="phone" class="form-label">Контактный телефон</label>
-                <input type="tel" class="form-control shadow-none" id="phone" placeholder="+380 00 0000 000">
+                <input type="tel" class="form-control shadow-none" id="phone" placeholder="+380 00 0000 000" name="tel">
                 <label for="FIO" class="form-label">ФИО</label>
-                <input type="text" class="form-control shadow-none" id="FIO">
+                <input type="text" class="form-control shadow-none" id="FIO" name="fio">
                 <label for="select" class="form-label">Тема вопроса</label>
-                <select class="form-select shadow-none" aria-label="Default select example" id="select">
+                <select class="form-select shadow-none" aria-label="Default select example" id="select" name="subject">
                   <option selected>-------</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
@@ -204,7 +205,7 @@
             </div>
             <div class="col-lg-6">
               <label for="message" class="form-label">Сообщение</label>
-              <textarea class="form-control" id="message" rows="7"></textarea>
+              <textarea class="form-control" id="message" rows="7" name="message"></textarea>
               <button class="btn shadow-none offset-lg-1 offset-xl-3">Получить консультацию <span>></span></button>
             </div>
           </div>
