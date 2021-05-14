@@ -2,10 +2,10 @@
 $name = $_POST['name'];
 $tel = $_POST['tel'];
 $email = $_POST['email'];
-$service = $_POST['subject'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$array = [$name, $tel, $service, $message, $email];
+$array = [$name, $tel, $subject, $message, $email];
 
 foreach ($array as $value) {
   $value = htmlspecialchars($value);
@@ -13,7 +13,7 @@ foreach ($array as $value) {
   $value = trim($value);
 }
 
-if (mail("mail@gmail.com", "Прошу связатся со мной", "Мой телефон" . $fio . ". E-mail: " . $email . "Сообщение" . "<br>" . $message, "From:" . $email . "\r\n")) {
+if (mail("mail@gmail.com", "Прошу связатся со мной", "Мой телефон" . $tel . ". E-mail: " . $email . "Сообщение" . "<br>" . $message, "From:" . $email . "\r\n")) {
   echo "Сообщение отправлено";
 } else {
   echo "При отправке сообщения возникли ошибки";
