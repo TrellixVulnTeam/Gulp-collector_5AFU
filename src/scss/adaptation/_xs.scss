@@ -1,0 +1,163 @@
+@media(min-width:0px) and (max-width:576px){
+    .end{
+    text-align: center;
+  }
+  .yellow_line{
+    position: relative;
+    left: 293px;
+    top: 18px;
+  }
+
+  header{
+    .block{
+      height: 61px;
+    }
+    .header_top_line{
+      a{
+        text-align: end;
+        position: relative;
+        
+        font-size: 13px;
+      }
+      .email{
+        position: relative;
+        top: -8px;
+      }
+      .col-email{
+        text-align: end;
+      }
+      button{
+       bottom: 0;
+       position: relative;
+      }
+    }
+      .menu{
+    text-align: center;
+    .menu_section{
+      .line_menu{
+        display: none;
+      }
+      .drop_menu{
+    visibility: visible;
+    text-align: center;
+    color: black;
+    display: block;
+    position: relative;
+    top: 14px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a{
+      margin: 5px 8px;
+      color: black;
+      transition: 0.3s all ease;
+    }
+    a:hover{
+      color: $yellow;
+    }
+      }
+    }
+  }
+  .slider_header{
+    .slider{
+      .slick-list{
+        height: 300px;
+      }
+      .slick-prev, .slick-next{
+        visibility: hidden;
+      }
+      .slick-prev{
+        left: 100px;
+      }
+      .slick-next{
+        right: 100px;
+      }
+    }
+  }
+  }
+  section.service{
+    text-align: center;
+    .service_header{
+      .yellow_line{
+        visibility: hidden;
+      }
+      h3{
+        margin: 10px;
+        border-bottom: 2px solid $yellow;
+        display: inline-block;
+      }
+      button{
+        margin:10px 0 30px 0 ;
+      }
+    }
+    .main_box{
+      p{
+        margin: 33px 0;
+      }
+    }
+  }
+  section.about{
+    text-align: center;
+        height: 467px;
+    h5{
+      color: black;
+    }
+  }
+  section.get_consultation{
+    text-align: center;
+            .yellow_line{
+        visibility: hidden;
+      }
+      h3{
+        display: inline-block;
+        border-bottom: 2px solid $yellow;
+      }
+      img{
+        visibility: hidden;
+        margin-bottom: -382px;
+      }
+      button{
+        left: 0px;
+      }
+  }
+  section.get_consultation_footer{
+    background: rgb(255, 255, 255);
+    color: black;
+    .what_we_can{
+      box-shadow: 11px 10px 29px 5px rgba(122,122,122,0.5);
+      padding: 25px;
+    }
+  }
+  section.news{
+    text-align: center;
+  .yellow_line{
+    visibility: hidden;
+   }
+   h3{
+     display: inline-block;
+     border-bottom: 2px solid $yellow;
+   }
+   .news_article{
+     .news_slider{
+       .slick-prev, .slick-next{
+        visibility: hidden;
+       }
+       .item{
+         padding: 0;
+         img{
+           top: 0px;
+         }
+       }
+     }
+     .icon_data{
+      display: none;
+     }
+   }
+   }
+   footer{
+     text-align: center;
+     iframe{
+      display: none;
+     }
+   }
+}

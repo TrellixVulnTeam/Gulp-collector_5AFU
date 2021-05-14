@@ -1,0 +1,477 @@
+
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('../fonts/#{$url}.woff2') format('woff2'),
+		url('../#{$url}.woff') format('woff');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+@import "fonts";
+
+
+$serif: 'PT Serif Regular';
+
+$robot-r: 'Roboto Regular';
+
+$roboto-m: 'Roboto-Medium';
+
+$yellow:#f1c322;
+body{
+		font-family: 'PT Serif Regular';
+		font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+}
+.yellow_line{
+	width: 108px;
+	height: 2px;
+	background-color: $yellow;
+	margin-top: 13px;
+}
+.end{
+	text-align: end;
+}
+	p{
+		font-size: 14px;
+		color: #5e5e5e;
+	}
+
+		h3{
+		font-family: $roboto-m;
+		font-size: 24px;
+	}
+
+header{
+	 .block{
+		font-family: $serif;
+		 height:45px;
+		 	background: #303030;
+			 #free_consultation{
+				 .btn-close{
+					 background-color: #fff;
+				 }
+			 }
+			 a{
+					color: white;
+					position: relative;
+					top: 14px;
+				}
+			 i{
+				 color: $yellow;
+				 padding-right: 10px;
+			 }
+			 button{
+				 color: black;
+				 background-color: $yellow;
+				 border-radius: 0%;
+				 height:45px ;
+				 transition: 400ms ease all ;
+				 i{
+					 color: black;
+					 transition: 400ms ease all ;
+				 }
+			 }
+			 button:hover{
+				 color: white;
+				 i{
+					 color: white;
+				 }
+			 }
+	 }
+	 .menu{
+		 margin:40px 0 30px 0 ;
+		.menu_section{
+			text-align: end;
+
+			.drop_menu{
+				visibility: hidden;
+			}
+		}
+
+		 li{
+			 font-size: $robot-r;
+			 font-size: 16px;
+			 display: inline-block;
+			  list-style-type: none;
+				
+				a{
+					margin-right:25px ;
+					color: black;
+					padding: 10px 20px ;
+				}
+		 }
+		 li:hover{
+			 a{
+				border: 1px solid $yellow;
+			 }
+		 }
+	 }
+		.slider_header{
+		 background: url('../img/background_header.jpg')  no-repeat center center ;
+		 background-size: cover;
+		 height: 500px;
+		 .slider{
+			 	position: relative;
+				 top: 130px;
+				 .slick-next::before{
+					 content: '>';
+					 font-size: 15px;
+				 }
+				 .slick-next:hover{
+					background-color: $yellow;
+				 }
+				 .slick-next{
+					 width: 40px;
+					 height: 40px;
+					 border: 1px solid white ;
+				 }
+				 .slick-prev:hover{
+					background-color: $yellow;
+				 }
+				 .slick-prev::before{
+					 content: '<';
+					 font-size: 15px;
+				 }
+				 .slick-prev{
+					 width: 40px;
+					 height: 40px;
+					 border: 1px solid white ;
+				 }
+			 .item{
+				height: 155px;
+				 color: white;
+				 font-family: $roboto-m;
+				 h3{
+					 font-size: 30px;
+				 }
+				 p{
+					 font-family: $serif;
+					 font-size: 18px;
+					 color: #d3d2d2;
+				 }
+				 a{
+					 color: white;
+					font-family: $roboto-m;
+					font-size: 14px;
+					border: 1px solid $yellow;
+					border-radius: 0%;
+					padding: 10px 0 15px 20px;
+					transition: 0.3s all ease;
+					a:hover{
+						background: $yellow;
+					}
+					span{
+						padding: 16px 10px;
+						font-size: 10px;
+						background-color: $yellow;
+						color: white;
+						margin-left: 20px;
+					}
+				 }
+			 }
+		 }
+	}
+}
+
+section.service{
+	.service_header{
+		margin-top: 60px;
+		button{
+			font-family: $robot-r;
+			text-align: end;
+			border: 3px solid #e6e6e6;
+			padding: 15px 40px;
+			transition:400ms all ease ;
+		}
+		button:hover{
+			background-color: $yellow;
+			color: white;
+			border: 3px solid white;
+		}
+	}
+	.box{
+
+		text-align: center;
+		padding: 40px 40px;
+		margin-bottom: 35px;
+		h5{
+			margin: 30px 0 40px 0;
+			font-family: $roboto-m;
+			font-size: 18px;
+		}
+		.order{
+			margin-top: 86px;
+			p{
+				display: inline-block;
+				font-size: $robot-r;
+				color: black;
+			}
+			p:hover{
+				border-bottom: 1px solid black;
+			}
+			button{
+				position: relative;
+				bottom: 14px;
+				font-family: $roboto-m;
+				border:2px solid $yellow;
+				border-radius: 0%;
+				padding: 10px 0 10px 30px;
+				transition:400ms all ease ;
+				span{
+					color: white;
+					margin-left: 25px;
+					padding: 13px  12px;
+					background-color: $yellow;
+				transition:400ms all ease ;
+				}
+			}
+			button:hover{
+				background-color: $yellow;
+				color: white;
+			}
+		}
+	}
+}
+
+section.about{
+	background: url('../img/about_background.jpg')  no-repeat center center ;
+	color: white;
+	h5{
+		margin-top: 35px;
+		font-family: $roboto-m;
+		font-size: 24px;
+	}
+	p{
+		margin-top: 35px;
+		color: #d3d2d2;
+	}
+		button{
+			margin: 40px 0 45px 0;
+				position: relative;
+				bottom: 14px;
+				font-family: $roboto-m;
+				border:2px solid $yellow;
+				border-radius: 0%;
+				padding: 10px 0 10px 30px;
+				color: white;
+
+				span{
+					color: black;
+					margin-left: 25px;
+					padding: 13px  10px;
+					background-color: $yellow;
+				transition:400ms all ease ;
+				}
+			}
+			button:hover{
+				background-color: $yellow;
+			}
+}
+
+section.get_consultation{
+		margin-top: 45px;
+	label{
+		font-family: $robot-r;
+		margin-top: 15px;
+	}
+	input{
+		border-radius: 0%;
+	}
+				button{
+				position: relative;
+				top: 61px;
+				left: 38px;
+				font-family: $roboto-m;
+				border:2px solid $yellow;
+				border-radius: 0%;
+				padding: 10px 0 10px 30px;
+				transition:400ms all ease ;
+				span{
+					color: white;
+					margin-left: 25px;
+					padding: 13px  12px;
+					background-color: $yellow;
+				transition:400ms all ease ;
+				}
+			}
+			button:hover{
+				background-color: $yellow;
+				color: white;
+			}
+			img{
+				position: relative;
+				top: 22px;
+			}
+}
+
+section.get_consultation_footer{
+	background: url('../img/get_consultation_footer.jpg') no-repeat center center;
+	padding: 40px 0;
+	text-align: center;
+	color: white;
+	.check{
+		width: 40px;
+		height: 40px;
+		border: 1px solid $yellow;
+		display: inline-block;
+		i{
+			position: relative;
+			top: 6px;
+		}
+	}
+	h5{
+		margin: 30px 0;
+		font-family: $roboto-m;
+		font-size: 18px;
+	}
+	p{
+		color: #9fa0a3;
+	}
+}
+
+section.news{
+	margin-bottom: 110px;
+	.news_header{
+		margin-top: 65px;
+				button{
+			margin: 0px;
+			padding: 0px;
+			font-family: $robot-r;
+			text-align: end;
+			border: 3px solid #e6e6e6;
+			padding: 15px 40px;
+			transition:400ms all ease ;
+		}
+		button:hover{
+			background-color: $yellow;
+			color: white;
+			border: 3px solid white;
+		}
+	}
+	.news_article{
+		margin-top: 50px;
+			.news_slider{
+				.slick-next::before{
+					 content: '>';
+					 font-size: 15px;
+					 color: #9e9c9c;
+				 }
+				 .slick-next:hover{
+					background-color: $yellow;
+				 }
+				 .slick-next{
+					 position: relative;
+					 top: 106px;
+					 left: 540px;
+					 width: 40px;
+					 height: 40px;
+					 border: 1px solid #dadada ;
+				 }
+				 .slick-prev:hover{
+					background-color: $yellow;
+				 }
+				 .slick-prev::before{
+					 content: '<';
+					 font-size: 15px;
+					 color: #9e9c9c;
+				 }
+				 .slick-prev{
+					 position: relative;
+					 top: 504px;
+					 left: 481px;
+					 width: 40px;
+					 height: 40px;
+					 border: 1px solid  #dadada;
+				 }
+		.item{
+			padding: 60px 20px 40px 70px;
+			img{
+			position: relative;
+			bottom: 59px;
+			}
+			h4{
+			font-family: $roboto-m;
+			font-size: 16px;
+			}
+			.author{
+				color: black;
+				text-align: end;
+			}
+		}
+	}
+	.icon_data{
+		width: 45px;
+		height: 55px;
+		background-color: $yellow;
+		position: relative;
+    top: 53px;
+    left: 12px;
+	}
+	h5{
+		font-family: $roboto-m;
+		font-size: 16px;
+		margin: 20px 0;
+	}
+	}
+}
+
+footer{
+	color: white;
+	background-color: #595959 ;
+	padding-top: 33px;
+	h5{
+		font-family: $roboto-m;
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	p{
+		font-family: $robot-r;
+		color: #d3d2d2;
+		margin-bottom: 30px;
+	}
+	.contact{
+						 button{
+				 margin-bottom: 30px;
+				 color: black;
+				 background-color: $yellow;
+				 border-radius: 0%;
+				 height:45px ;
+				 transition: 400ms ease all ;
+				 i{
+					 color: black;
+					 transition: 400ms ease all ;
+				 }
+			 }
+			 button:hover{
+				 color: white;
+				 i{
+					 color: white;
+				 }
+			 }
+			 	i{
+				 color: $yellow;
+				 padding-right: 10px;
+			 }
+			 a{
+				 	margin-bottom: 30px;
+					 color: white;
+			 }
+	}
+	.author{
+		background-color: #303030;
+		font-family: $robot-r;
+		font-size: 12px;
+		padding: 15px 0;
+	}
+}
+
+@import "adaptation/xl";
+@import "adaptation/lg";
+@import "adaptation/md";
+@import "adaptation/sm";
+@import "adaptation/xs";

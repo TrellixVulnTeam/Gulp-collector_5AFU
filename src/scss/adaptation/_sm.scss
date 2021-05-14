@@ -1,0 +1,127 @@
+@media(min-width:576px) and (max-width:768px){
+    .end{
+    text-align: center;
+  }
+  .yellow_line{
+    position: relative;
+    left: 293px;
+    top: 18px;
+  }
+  header{
+    .header_top_line{
+      a{
+        text-align: end;
+        position: relative;
+        left: -16px;
+        font-size: 13px;
+      }
+      .email{
+        position: relative;
+        left: 163px;
+      }
+      button{
+       bottom: 21px;
+       position: relative;
+      }
+    }
+      .menu{
+    text-align: center;
+    .menu_section{
+      position: relative;
+      right: 50px;
+      top: 22px;
+      a{
+        position: relative;
+        left: 27px;
+        margin-right: 0px;
+      }
+    }
+  }
+  .slider_header{
+    .slider{
+      .slick-list{
+        height: 230px;
+      }
+      .slick-prev, .slick-next{
+        top: 280px;
+      }
+      .slick-prev{
+        left: 100px;
+      }
+      .slick-next{
+        right: 100px;
+      }
+    }
+  }
+  }
+  section.service{
+    text-align: center;
+    .service_header{
+      .yellow_line{
+        top: 44px;
+        left: 219px;
+      }
+      h3{
+        margin: 10px;
+      }
+      button{
+        margin:10px 0 30px 0 ;
+      }
+    }
+    .main_box{
+      p{
+        margin: 33px 0;
+      }
+    }
+  }
+  section.get_consultation{
+    text-align: center;
+            .yellow_line{
+    left: 215px;
+    top: 33px;
+      }
+      img{
+        visibility: hidden;
+        margin-bottom: -382px;
+      }
+      button{
+        left: 0px;
+      }
+  }
+  section.get_consultation_footer{
+    background: rgb(255, 255, 255);
+    color: black;
+    .what_we_can{
+      box-shadow: 11px 10px 29px 5px rgba(122,122,122,0.5);
+      padding: 25px;
+    }
+  }
+  section.news{
+    text-align: center;
+  .yellow_line{
+    left: 215px;
+    top: 33px;
+   }
+   .news_article{
+     .news_slider{
+       .slick-prev{
+        left: 157px;
+        top: 566px;
+       }
+       .slick-next{
+         left: 279px;
+       }
+     }
+     .icon_data{
+       left: 153px;
+     }
+   }
+   }
+   footer{
+     text-align: center;
+     iframe{
+       width: 499px;
+       height: 231px;
+     }
+   }
+}

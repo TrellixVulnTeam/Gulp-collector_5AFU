@@ -1,0 +1,6 @@
+< 635px xs
+635px 845px = sm
+845px 1080px = md
+1080px 1320px = lg
+1320px 1540px = xl
+>=1520px xxl

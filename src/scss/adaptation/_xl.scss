@@ -1,0 +1,17 @@
+@media(min-width:1200px) and (max-width:1400px){  
+  section.service{
+    .service_header{
+      button{
+        text-align: end;
+      }
+    }
+  }
+  section.get_consultation{
+    img{
+      top: 23px;
+    }
+  }
+section.news .news_article .news_slider .slick-prev {
+  top: 525px;
+}
+}
